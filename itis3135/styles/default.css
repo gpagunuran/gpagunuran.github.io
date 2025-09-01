@@ -1,0 +1,45 @@
+body {
+    background-color:rgb(0 80 53);
+    text-align: center;
+    color: #A49665;
+    font-family: monospace;
+    font-size: 16px;
+
+}
+
+hr {
+    border-color: black;
+}
+
+a {
+    color: cornsilk;
+    text-decoration: none;
+}
+
+a:hover {
+    color:gold;
+    text-decoration: line;
+
+}
+
+main {
+    text-align: left;
+    margin: 0 20%;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.intro-pic {
+
+    width: 100%;
+}
+.intro-figure {
+    text-align:center;
+    font-style:italic
+}
+.memorable-item {
+    text-align:center;
+}
