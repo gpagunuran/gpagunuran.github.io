@@ -4,19 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pgndsn.com</title>
+    <style>
+        :root {
+            --color1: #533A71;
+            --color2: #CDF7f6;
+            --color3: #077187;
+            --color4: #698f3f;
+            --color5: #000500;
+        }
+        * {
+            font-family: Geneva,'Franklin Gothic Medium' ,sans-serif;
+            color:var(--color5);
+            
+        }
+        body {
+            background:var(--color2);
+        }
+        hr {
+            border: 2px solid var(--color3);
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        .about {
+            border: 3px solid var(--color3);
+            border-radius: 10px;
+            padding: 1rem; 
+            margin-bottom: 1.5rem;           
+        }
+        .logo { 
+            height: 50px; 
+            vertical-align: middle;
+        }
+        .top {
+            display: inline;
+            font-family: Geneva,'Franklin Gothic Medium' ,sans-serif;
+            margin-left: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Pagun Design Firm</h1>
+        <a href="./"><img class="logo" src="https://openclipart.org/download/192727/The-Boastful-Turtle.svg" alt="firm logo- the boastful turtle"></a>
+        <h1 class="top">Pagun Design Firm</h1>
+        <hr>
+        
         <nav>
             
         </nav>
     </header>
     <main>
-
+        <div class="about">
+            <h2>Pagun's Services</h2>
+            <p>Pagun Design is a forward-thinking design firm that embodies the spirit of its name, which has diverse origins tied to structure and creativity. Drawing from the Sanskrit 'pagun', meaning "good or merit," and its ties to the word for the temple's foundation, the firm builds its work on the principles of integrity, reliability, and holistic management. This commitment extends to the firm's designs, which are informed by the Korean word for "pattern" or "design," 'p'agun', and the Filipino origin of "pagun", meaning to rise or ascend. By blending these linguistic roots into our main principles, Pagun Design crafts innovative and purposeful visual solutions that are not only aesthetically pleasing but also grounded in a deep sense of integrity and structural excellence.</p>
+        </div>
+        <div>
+            <h2>Why Choose Pagun Design?</h2>
+            <ul style="list-style-type: '★ ';">
+                <li>Ethical design rooted in principles of integrity.</li>
+                <li>Purposeful solutions that solve real-world problems.</li>
+                <li>A global perspective with a local touch.</li>
+                <li>Award-winning team of experienced professionals.</li>
+                <li>Commitment to long-term client partnerships.</li>
+                <li>Innovative and sustainable design practices.</li>
+                <li>Specializing in crafting unique brand identities.</li>
+            </ul>
+        </div>
     </main>
     <footer>
-        <p>Page built by <a href="PgnDsn.com">Pagun Design</a> &copy;2025</p>
+        <p>Page built by Pagun Design</a> &copy;2025</p>
     </footer>
 </body>
 </html>
