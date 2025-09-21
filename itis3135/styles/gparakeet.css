@@ -1,7 +1,136 @@
 :root {
-    --color1:#2e0e02;
-    --color2:#f1dede;
-    --color3:#81e4da;
-    --color4:#72b01d;
-    --color5:#faf33e;
+    --color1:#38302E;
+    --color2:#F5FBFF;
+    --color3:#9ABDDC;
+    --color4:#697A21;
+    --color5:#F4E04D;
+}
+
+header {
+    display: grid;
+    grid-template-areas: 
+        "logo-title"
+        "navigation";
+    background-color: var(--color3);
+    color: var(--color2);
+    padding: 1em 0 0 0;
+    margin: 1em;
+    border-radius: 10px;
+}
+
+.logo-title {
+    grid-area: logo-title;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+.logo {
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover;
+}
+
+.logo-title h1 {
+    color: var(--color1);
+    font-size: 1.8em; 
+    margin: 0;
+    white-space: nowrap;
+}
+
+.topnav {
+    grid-area: navigation;
+}
+
+.topnav ul {
+    background-color: var(--color4);
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    margin: 0;
+    gap: 1.5em;
+}
+
+.topnav ul li {
+    background-color: var(--color5);
+    padding: 0.5em 1.5em;
+    border-radius: 9px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.topnav ul li:hover {
+    transform: translateY(-2px);
+    background-color: #e6d144;
+}
+
+.topnav ul a {
+    color: var(--color1);
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+
+.topnav a:hover {
+    color: var(--color2);
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    padding: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+main h2 {
+    color: var(--color1);
+    border-bottom: 2px solid var(--color5);
+    padding-bottom: 0.5em;
+}
+
+main p {
+    line-height: 1.6;
+    color: var(--color1);
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    background-color: var(--color3);
+    color: var(--color1);
+    border-radius: 10px;
+}
+
+.slogan {
+    font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+    .topnav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .topnav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+    }
+    
+    .topnav ul li {
+        width: 80%;
+        text-align: center;
+    }
 }
