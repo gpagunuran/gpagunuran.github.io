@@ -1,23 +1,30 @@
+:root {
+    --color1: cornsilk;
+    --color2: black;
+    --color3: #A49665;
+    --color4: rgb(0 80 53);
+    --color5: gold;
+}
 body {
-    background-color:rgb(0 80 53);
+    background-color: var(--color4);
     text-align: center;
-    color: #A49665;
+    color: var(--color3);
     font-family: monospace;
     font-size: 16px;
 
 }
 
 hr {
-    border-color: black;
+    border-color: var(--color2);
 }
 
 a {
-    color: cornsilk;
+    color: var(--color1);
     text-decoration: none;
 }
 
 a:hover {
-    color:gold;
+    color: var(--color5);
     text-decoration: line;
 
 }
@@ -42,4 +49,23 @@ h2 {
 }
 .memorable-item {
     text-align:center;
+}
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 1em;
+}
+
+.course-table th,
+.course-table td {
+    border: 1px solid #A49665;
+    padding: 0.5em 1em;
+    text-align: left;
+}
+
+.course-table th {
+    background-color: var(--color3);
+    color: cornsilk;
+    font-weight: bold;
 }
