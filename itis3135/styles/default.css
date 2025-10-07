@@ -30,9 +30,10 @@ a:hover {
 }
 
 main {
+    max-width: 1200px; /* Adjust as needed */
+    width: 90%; /* Adjust percentage based on design requirements */
+    margin: 0 auto; /* Centers the content horizontally */
     text-align: left;
-    margin: 0 20%;
-
 }
 
 h2 {
@@ -69,3 +70,41 @@ h2 {
     color: cornsilk;
     font-weight: bold;
 }
+
+/* MOBILE RULES */
+
+    /* Rule Overrides For Laptops / Small Screens */
+
+    @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+
+        #colorbox {
+
+            background-color:var(--color4);
+
+        }
+
+    }
+
+    /* Rule Overrides For Tablet Devices */
+
+    @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+
+        #colorbox {
+
+            background-color:var(--color3);
+
+        }
+
+    }
+
+    /* Rule Overrides For Mobile Devices */
+
+    @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+
+        #colorbox {
+
+            background-color:var(--color5);
+
+        }
+    }
+
