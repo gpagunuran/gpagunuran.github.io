@@ -73,38 +73,39 @@ h2 {
 
 /* MOBILE RULES */
 
-    /* Rule Overrides For Laptops / Small Screens */
-
-    @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
-
-        #colorbox {
-
-            background-color:var(--color4);
-
-        }
-
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+    #colorbox {
+        background-color: var(--color4);
+        width: 80%;
+        font-size: 1.1em;
     }
-
-    /* Rule Overrides For Tablet Devices */
-
-    @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
-
-        #colorbox {
-
-            background-color:var(--color3);
-
-        }
-
+    body {
+        font-size: 17px;
     }
+}
 
-    /* Rule Overrides For Mobile Devices */
-
-    @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
-
-        #colorbox {
-
-            background-color:var(--color5);
-
-        }
+/* Rule Overrides For Tablet Devices */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    #colorbox {
+        background-color: var(--color3);
+        width: 95%;
+        font-size: 1em;
     }
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Rule Overrides For Mobile Devices */
+@media screen and (min-width: 370px) and (max-width: 600px) {
+    #colorbox {
+        background-color: var(--color5);
+        width: 100%;
+        font-size: 0.95em;
+    }
+    body {
+        font-size: 15px;
+    }
+}
 
