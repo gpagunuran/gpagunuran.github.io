@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS3135 | Introduction Form</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+
+    <style>
+        form { 
+            background-color: var(--color1); 
+            padding: 15px; 
+            border-radius: 5px;
+         }
+        form div { 
+            margin-bottom: 10px; 
+        }
+        form label { 
+            display: block; 
+            margin-bottom: 3px; 
+            font-weight: bold;
+         }
+        form textarea { 
+            min-height: 80px; 
+        }
+        .course-entry { 
+            border: 1px solid var(--color3); 
+            padding: 10px; 
+            margin-top: 10px; 
+        }
+        /* Style for the loaded image preview */
+        #loadImage img { 
+            max-width: 90%; 
+            height: auto; 
+            margin-top: 10px; 
+        }
+        /* Acknowledgment styling */
+        .ack-text { 
+            background-color: var(--color1); 
+            padding: 10px; 
+            border: 1px solid var(--color3); 
+            border-radius: 5px; 
+            margin-bottom: 0; 
+        }
+        .ack-form-section { 
+            background-color: var(--color1); 
+            padding: 10px; 
+            border-radius: 5px; 
+            border-top: none; 
+        }
+        .ack-form-section label { 
+            display: inline; 
+            margin-left: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Introduction Form</h2>
+        <h3>Please submit the form below.</h3>
+
+        <form id="form">
+            <div>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" value="Gabriel" placeholder="First Name" required>
+            </div>
+            <div>
+                <label for="mname">Middle Name (or Initial) (optional):</label>
+                <input type="text" id="mname" name="mname" placeholder="Middle Name">
+            </div>
+            <div>
+                <label for="nname">Nickname/Preferred Name (optional):</label>
+                <input type="text" id="nname" name="nname" placeholder="Nickname">
+            </div>
+            <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" value="Pagunuran" placeholder="Last Name" required>
+            </div>
+
+            <div>
+                <label for="adj">Mascot Adjective:</label>
+                <input type="text" id="adj" name="adj" value="Generic" placeholder="Adjective" required>
+            </div>
+            <div>
+                <label for="animal">Mascot Animal:</label>
+                <input type="text" id="animal" name="animal" value="Parakeet" placeholder="Animal" required>
+            </div>
+            <div>
+                <label for="divider">Divider (ie, ~, |, ♥️, etc):</label>
+                <input type="text" id="divider" name="divider" value="|" placeholder="|" required>
+            </div>
+
+            <div>
+                <label>Add your Image</label>
+                <input type="file" name="file" id="IntroImage" required>
+                <button type="button" onClick="loadImage()">CLICK HERE TO LOAD</button>
+                <div id="loadImage"></div>
+            </div>
+            <div>
+                <label for="caption">Picture Caption:</label>
+                <input type="text" id="caption" name="caption" value="Testing out my sister's new camera" placeholder="Caption" required>
+            </div>
+
+            <div>
+                <label for="personal_bg">Personal Background:</label>
+                <textarea id="personal_bg" name="personal_bg" placeholder="[Write a brief summary here.]" required>I was born in New Brunswick, NJ, but I spent most of my life in Concord, NC. I still live in Concord with my parents.</textarea>
+            </div>
+            <div>
+                <label for="professional_bg">Professional Background:</label>
+                <textarea id="professional_bg" name="professional_bg" placeholder="[Write a brief summary here.]" required>I am a student, but I also work part-time at the CLT Esports Arena, helping to manage events and hardware.</textarea>
+            </div>
+            <div>
+                <label for="academic_bg">Academic Background:</label>
+                <textarea id="academic_bg" name="academic_bg" placeholder="[Write about your major and year, if applicable.]" required>I am a Junior studying Computer Science with a concentration in Software Engineering at UNC Charlotte.</textarea>
+            </div>
+            <div>
+                <label for="primary_computer">Primary Computer:</label>
+                <input type="text" id="primary_computer" name="primary_computer" value="Custom-built PC, Windows 11, Desktop, at home." placeholder="[List manufacturer, OS, type, and location.]" required>
+            </div>
+            <div><label>Courses I’m Taking, & Why:</label>
+                <div class="course-entry">
+                    <label>Course Code:</label> <input type="text" name="course_code" value="MATH 1242" placeholder="e.g., MATH 1242" required>
+                    <label>Name:</label> <input type="text" name="course_name" value="Calculus 2" placeholder="Name" required>
+                    <label>Reason:</label> <textarea name="course_reason" placeholder="Reason" required>This is required for my major, but I am interested in continuing my math studies to work towards a math minor.</textarea>
+                </div>
+                <div class="course-entry">
+                    <label>Course Code:</label> <input type="text" name="course_code" value="ITSC 3146" placeholder="e.g., ITSC 3146" required>
+                    <label>Name:</label> <input type="text" name="course_name" value="Intro to Operating Sys. & Networking" placeholder="Name" required>
+                    <label>Reason:</label> <textarea name="course_reason" placeholder="Reason" required>I am very interested in operating systems. I would like what I learn in this class to create some personal projects.</textarea>
+                </div>
+                 <div class="course-entry">
+                    <label>Course Code:</label> <input type="text" name="course_code" value="ITIS 3200" placeholder="e.g., ITIS 3200" required>
+                    <label>Name:</label> <input type="text" name="course_name" value="Intro to Info Security and Privacy" placeholder="Name" required>
+                    <label>Reason:</label> <textarea name="course_reason" placeholder="Reason" required>This class very closely relates to one of my dream occupations: creating and maintaining cybersecurity measures for a public database, like online libraries.</textarea>
+                </div>
+                 <div class="course-entry">
+                    <label>Course Code:</label> <input type="text" name="course_code" value="ITIS 3135" placeholder="e.g., ITIS 3135" required>
+                    <label>Name:</label> <input type="text" name="course_name" value="Front-End Web App Development" placeholder="Name" required>
+                    <label>Reason:</label> <textarea name="course_reason" placeholder="Reason" required>I figure that concepts in this course are essential to know for anyone that wants to create a nice portfolio for computer science.</textarea>
+                </div>
+            </div>
+            <div>
+                <label for="funny_item">Funny/Interesting Item to Remember Me by (optional):</label>
+                <input type="text" id="funny_item" name="funny_item" value="I am not a bird.">
+            </div>
+            <div>
+                <label for="share_other">I’d Also Like to Share (optional):</label>
+                <input type="text" id="share_other" name="share_other" value="Come visit me at the CLT Esports Arena!">
+            </div>
+            <div><label>5 links:</label>
+                <input type="url" name="link1" value="https://webpages.charlotte.edu/gpagunu1/" placeholder="Link 1 URL" required>
+                <input type="url" name="link2" value="https://github.com/gpagunuran/gpagunuran.github.io" placeholder="Link 2 URL" required>
+                <input type="url" name="link3" value="https://www.freecodecamp.org/gpagunuran7419" placeholder="Link 3 URL" required>
+                <input type="url" name="link4" value="https://www.codecademy.com/profiles/gpagunuran7419" placeholder="Link 4 URL" required>
+                <input type="url" name="link5" value="https://www.linkedin.com/in/gabriel-pagunuran" placeholder="Link 5 URL" required>
+            </div>
+
+            <p class="ack-text" id="ack_statement_text">
+                I, agree to abide by the terms of the course contract in my Fall 2025, ITIS3135, Front End Web App Developament with my instructor, Professor D.I. von Briesen. I understand that all work that I do on publicly available online tools will be available to the world, and will not put information there that is inappropriate for schoolwork, or that I wish to keep private. I also understand that it is my work that counts for attendance, not logins or showing up for class. As such, failure to turn in assignments may show as absences. I also understand that given the structure and content of this class it’s possible to find many examples online or even view my classmates’ code directly. I swear that I will only use these resources to learn, and will not cut and paste code except where I have properly given credit (i.e. external libraries) and never from my classmates.
+            </p>
+            <div class="ack-form-section">
+                <div>
+                    <input type="checkbox" id="ack_check" name="ack_check" required>
+                    <label for="ack_check">I acknowledge and agree to the terms</label>
+                </div>
+                <div>
+                    <label for="ack_name">Your Name:</label>
+                    <input type="text" id="ack_name" name="ack_name" value="Gabriel Pagunuran" placeholder="Full Name" required>
+                </div>
+                <div>
+                    <label for="ack_date">Date:</label>
+                    <input type="text" id="ack_date" name="ack_date" value="2025-08-31" placeholder="YYYY-MM-DD" required>
+                </div>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button" id="clear-form">Clear</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="scripts/htmlinclude.min.js"></script>
+    <script src="scripts/introduction.js"></script>
+</body>
+</html>
