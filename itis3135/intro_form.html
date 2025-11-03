@@ -7,6 +7,8 @@
     <title>ITIS3135 | Introduction Form</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/default.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
 
     <style>
         form { 
@@ -53,6 +55,19 @@
         .ack-form-section label { 
             display: inline; 
             margin-left: 5px; 
+        }
+
+        /* Added for code output */
+        .json-output pre, .html-output pre {
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            padding: 1em;
+            border-radius: 5px;
+            text-align: left;
+            white-space: pre-wrap; /* Allows wrapping */
+        }
+        .json-output code, .html-output code {
+            font-family: 'Courier New', Courier, monospace;
         }
     </style>
 </head>
@@ -181,6 +196,8 @@
                 <button type="submit">Submit</button>
                 <button type="reset">Reset</button>
                 <button type="button" id="clear-form">Clear</button>
+                <button type="button" id="generate-json">Generate JSON</button>
+                <button type="button" id="generate-html">Generate HTML</button>
             </div>
         </form>
     </main>
@@ -190,5 +207,8 @@
 
     <script src="scripts/htmlinclude.min.js"></script>
     <script src="scripts/introduction.js"></script>
-</body>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="scripts/generate_json.js"></script>
+    <script src="scripts/generate_html.js"></script> </body>
 </html>
