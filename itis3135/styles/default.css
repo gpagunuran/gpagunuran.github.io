@@ -46,10 +46,10 @@ section {
     border-left: 4px solid var(--color3);
     background-color: rgba(164, 150, 101, 0.1);
 }
-section h3 {
+.section-heading {
     margin-top: 0;
     color: var(--color1);
-}
+}  /*add class section-heading to things*/
 ul {
     line-height: 1.8;
 }
