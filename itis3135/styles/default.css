@@ -11,37 +11,56 @@ body {
     color: var(--color3);
     font-family: monospace;
     font-size: 16px;
-
 }
-
 hr {
     border-color: var(--color2);
 }
-
 a {
     color: var(--color1);
     text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
 }
-
 a:hover {
     color: var(--color5);
-    text-decoration: line;
-
+    border-bottom-color: var(--color5);
 }
-
+a:visited {
+    color: var(--color3);
+}
+a:active {
+    color: var(--color5);
+}
 main {
-    max-width: 1200px; /* Adjust as needed */
-    width: 90%; /* Adjust percentage based on design requirements */
-    margin: 0 auto; /* Centers the content horizontally */
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
     text-align: left;
 }
-
 h2 {
     text-align: center;
 }
+section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-left: 4px solid var(--color3);
+    background-color: rgba(164, 150, 101, 0.1);
+}
+section h3 {
+    margin-top: 0;
+    color: var(--color1);
+}
+ul {
+    line-height: 1.8;
+}
+ul li {
+    margin-bottom: 1rem;
+}
+strong {
+    color: var(--color1);
+}
 
 .intro-pic {
-
     width: 100%;
 }
 .intro-figure {
@@ -57,22 +76,18 @@ h2 {
     margin: 1em 0;
     font-size: 1em;
 }
-
 .course-table th,
 .course-table td {
     border: 1px solid #A49665;
     padding: 0.5em 1em;
     text-align: left;
 }
-
 .course-table th {
     background-color: var(--color3);
     color: cornsilk;
     font-weight: bold;
 }
-
 /* MOBILE RULES */
-
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     #colorbox {
@@ -84,7 +99,6 @@ h2 {
         font-size: 17px;
     }
 }
-
 /* Rule Overrides For Tablet Devices */
 @media screen and (min-width: 601px) and (max-width: 980px) {
     #colorbox {
@@ -96,7 +110,6 @@ h2 {
         font-size: 16px;
     }
 }
-
 /* Rule Overrides For Mobile Devices */
 @media screen and (min-width: 370px) and (max-width: 600px) {
     #colorbox {
@@ -108,4 +121,3 @@ h2 {
         font-size: 15px;
     }
 }
-

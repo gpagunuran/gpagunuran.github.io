@@ -3,29 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>h1 in header || h2 in main</title>
+    <title>Website Evaluations</title>
     <link rel="stylesheet" href="styles/default.css">
     <!--Accumulus Validator-->
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        /* Link styling overrides */
+        a {
+            color: #2c5f7d;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        a:hover {
+            color: #1a3d52;
+            border-bottom-color: #2c5f7d;
+        }
+        
+        a:visited {
+            color: #4a7a94;
+        }
+        
+        a:active {
+            color: #1a3d52;
+        }
+        
+        section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border-left: 4px solid #2c5f7d;
+            background-color: #f9f9f9;
+        }
+        
+        section h3 {
+            margin-top: 0;
+        }
+        
+        ul {
+            line-height: 1.8;
+        }
+        
+        ul li {
+            margin-bottom: 1rem;
+        }
+        
+        strong {
+            color: #2c5f7d;
+        }
+    </style>
 </head>
 <body>
-    <!--header+main+footer-->
-  <header>
+    <header>
         <div data-include="components/header.html"></div>
     </header>
-   <main>
-    <!--the page content-->
-    <h2>
-        Example Page
-    </h2>
-    <p>Used crtl+i to get this dummy text. Extra notes: in vscode, use header+main+body to get the three tags. example for adding multiple elements into another element: nav>a*5 will put a anchor tags into a nav element. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa erat at dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-    <p>Phasellus euismod, justo at facilisis cursus, enim erat dictum enim, nec dictum massa enim nec erat. Etiam ac nisi nec urna cursus dictum. Mauris euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa erat at dui.</p>
-    <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
-   </main>
-   <footer>
+    <main>
+        <h2>Website Evaluations</h2>
+        
+        <section>
+            <h3><a href="https://www.jeandawson.com/" target="_blank">Jean Dawson</a></h3>
+            <p>Jean Dawson's website is a contemporary portfolio site for the musician and artist. It features an abstract, modern design focused on showcasing his discography and creativity with an emphasis on artistic presentation.</p>
+            
+            <ul>
+                <li><strong>Contrast:</strong> The site demonstrates excellent contrast with a dark background and light text, making content highly readable. The minimalist color palette creates strong visual separation between elements without overwhelming the viewer.</li>
+                
+                <li><strong>Repetition:</strong> Consistent typography, spacing, and layout patterns are maintained throughout the site. The discography entries follow a uniform structure, and navigation elements repeat predictably, creating a cohesive user experience.</li>
+                
+                <li><strong>Alignment:</strong> All elements are carefully aligned, likely using a grid system. Text, images, and interactive elements line up precisely, creating a professional and polished appearance that guides the eye naturally through the content.</li>
+                
+                <li><strong>Proximity:</strong> Related content is grouped logically with appropriate spacing. Track listings are clustered together, while separate sections maintain clear visual separation, making it easy to distinguish between different types of information.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h3><a href="https://www.lingscars.com/" target="_blank">Ling's Cars</a></h3>
+            <p>Ling's Cars is a UK-based car leasing website known for its deliberately chaotic and overwhelming design. The site features animated graphics, bright colors, and an unconventional approach that intentionally breaks traditional web design conventions.</p>
+            
+            <ul>
+                <li><strong>Contrast:</strong> While the site uses high-contrast colors (bright yellows, reds, and blacks), the sheer volume of competing visual elements reduces effective contrast. Important information gets lost among flashing animations and competing color schemes, making it difficult to identify hierarchy.</li>
+                
+                <li><strong>Repetition:</strong> The site lacks consistent design patterns, with each section featuring different styles, fonts, and visual treatments. This absence of repetition creates a disjointed experience where users cannot develop expectations about how different elements will appear or behave.</li>
+                
+                <li><strong>Alignment:</strong> Elements appear randomly placed without adherence to a grid system or alignment principles. Text boxes, images, and buttons overlap or float independently, creating visual chaos rather than an organized structure that guides the user's attention.</li>
+                
+                <li><strong>Proximity:</strong> Related information is not grouped effectively, with unrelated elements competing for space. The lack of appropriate whitespace and logical grouping makes it challenging to distinguish between different sections or understand which elements are connected.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
         <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/htmlinclude.min.js"></script>
-    
 </body>
 </html>
