@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS3135 || Client Project Overview in main</title>
+    <link rel="stylesheet" href="../styles/default.css">
+    <!--Accumulus Validator-->
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--header+main+footer-->
+  <header>
+        <div data-include="../components/header.html"></div>
+    </header>
+   <main>
+    <!--the page content-->
+   <h2>Project Overview</h2>
+    
+    <section>
+        <h3>Application Description</h3>
+        <p><strong>Project Name:</strong> Siembra NC Volunteer Meeting Hub</p>
+        <p>My website will act as a landing page for attendees of a meeting hosted by my client’s organization.Currently, the organization’s process is to use a third party website sign-in form, and within that form, they include a link to a shared google drive folder that contains supplementary information. Visitors of my site should be able to sign in/verify the specific date/meeting time they are attending, or just use the site as a hub for all the information that they go over during the meeting.</p>
+        <p>Any volunteer (from my experience, usually middle-aged and older) that is attending a meeting should be able to visit this site using a QR code that would be presented at the beginning of the meeting. The site could also be used as a reference page for anyone else interested in the content of the meeting.
+</p>
+    </section>
+
+    <section>
+        <h3>Client Information</h3>
+        <p><strong>Client Name:</strong> Umme</p>
+        <p><strong>Organization:</strong> Siembra NC - Defend & Recruit</p>
+        <p><strong>Contact Email:</strong> <a href="mailto:hola@siembranc.org">hola@siembranc.org</a></p>
+    </section>
+
+    <section>
+        <h3>Content Overview</h3>
+        <p>
+            The website’s home page should act as an intuitive directory that guides a user to their desired subdirectory. Since the site will mainly be accessed by a QR code for a meeting, the first thing a user should see is the ability to sign in to their meeting time, but without impeding the ability to find any other directory. The other pages I will implement include an informational page detailing what volunteer hours entail, a page that includes a form to sign up for volunteer hours, and a page detailing upcoming events sponsored by the organization.
+        </p>
+    </section>
+
+    <section>
+        <h3>Main Page Wireframe</h3>
+        <figure>
+            <a href="https://drive.google.com/file/d/1SYzSjrEJ1rR4HQkarmxiuCjqdrzmr154/view?usp=drive_link" target="_blank">Draw.io</a>
+            <br>
+            <img src="https://drive.google.com/thumbnail?id=1SYzSjrEJ1rR4HQkarmxiuCjqdrzmr154&sz=w1000" alt="Wireframe showing page layouts" style="max-width: 100%; height: auto; margin-top: 10px;">
+        </figure>
+    </section>
+
+    <section>
+        <h3>Site Map</h3>
+        <figure>
+            <a href="https://drive.google.com/file/d/1KwKY3t8RWXAma8fzFO9v0uclr2XNzu0M/view?usp=drive_link" target="_blank">Draw.io</a>
+            <br>
+            <img src="https://drive.google.com/thumbnail?id=1KwKY3t8RWXAma8fzFO9v0uclr2XNzu0M&sz=w1000" alt="Site Map showing navigation structure" style="max-width: 100%; height: auto; margin-top: 10px;">
+        </figure>
+    </section>
+
+    <section>
+        <h3>Page Design Details</h3>
+        
+        <article>
+            <h4>Home Page</h4>
+            <p>The home page will act as a directory to the other pages in the site, making sure that the pages that are more likely to be accessed are closer to the top of the page to minimize scrolling.The audience is mainly meeting attendees, but open to anyone interested. Home page content includes large buttons that link to the other pages on the site. No user data will need to be entered into this page. The header for every page will always have a navigation bar that includes a dropdown for prospective volunteers. This page will just be a page with information about the rest of the pages on the site.
+</p>
+        </article>
+
+        <article>
+            <h4>Meeting Sign-In Form Page</h4>
+            <p>This page is meant to gather information from meeting attendees to send to the organization. Meeting attendees are meant to use this form, but there’s nothing really stopping someone else from signing in. There should be no harm in extra entries anyways. This is a simple form element asking users for name and contact information to be put on a spreadsheet. Need validation for valid email and phone number prompts.
+</p>
+        </article>
+
+        <article>
+            <h4>Volunteer Hours Sign-Up Form</h4>
+            <p>This page will contain a separate form for users to sign up for volunteer hours.
+This page will include a form element that allows a user to fill in their name and contact information, and to select specific dates and times that they are available for volunteer hours. Validations will be needed for valid/required phone numbers.
+Once the form is submitted, the page will show extra information for volunteers, including what you must do once you are confirmed for a shift, and a link to a shared google drive folder with more informational documents.
+.</p>
+        </article>
+
+        <article>
+            <h4>Volunteer Hours Info</h4>
+            <p>The purpose of this page is to inform prospective volunteers about what they will be doing for volunteer hours.
+The content on this page will be mostly text, pictures, and videos provided by the client. Users will not need to enter data on the page. The bottom of the page will have an anchor element to the volunteer sign up form. 
+</p>
+        </article>
+
+        <article>
+            <h4>Events/Get Connected Page</h4>
+            <p>The purpose of this page is to inform users about upcoming events held or sponsored by the client’s organization. There will also be a section for contact information, some being a repeat of information that is at the bottom of each page’s footer.
+</p>
+        </article>
+    </section>
+
+    <section>
+        <h3>Dynamic Functionality</h3>
+        <p>he main interactability on this page will be centered around the two forms that my client requires. Other than that, I will be implementing a dropdown menu on the top navigation bar. My forms’ designs will be based around google forms,  <a href="https://www.when2meet.com/" target="_blank">When2Meet</a> and <a href="https://defendandrecruit.org/" target="_blank">Defend & Recruit</a>
+</p>
+    </section>
+
+    </main>
+   <footer>
+        <div data-include="../components/footer.html"></div>
+    </footer>
+    <script src="scripts/htmlinclude.min.js"></script>
+    
+</body>
+</html>
