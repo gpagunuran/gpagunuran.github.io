@@ -1,0 +1,389 @@
+/* CSS Variables */
+:root {
+    --primary-color: #2d5016;
+    --secondary-color: #3a6b1f;
+    --accent-color: #4a7f29;
+    --light-accent: #a8d58a;
+    --bg-color: #f4f4f4;
+    --white: #ffffff;
+    --text-color: #333333;
+    --light-gray: #f9f9f9;
+    --medium-gray: #dddddd;
+    --dark-gray: #666666;
+    --light-green-bg: #f0f7ed;
+    --error-color: #d32f2f;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.15);
+    --shadow-dark: rgba(0, 0, 0, 0.2);
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px var(--shadow-light);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: var(--secondary-color);
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--accent-color);
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    margin-left: auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--secondary-color);
+    min-width: 200px;
+    box-shadow: 0 8px 16px var(--shadow-dark);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content a {
+    padding: 0.75rem 1rem;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--accent-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--white);
+    box-shadow: 0 0 10px var(--shadow-light);
+    border-radius: 5px;
+}
+
+main h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+main h3 {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Button Styles */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.nav-button {
+    display: block;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-decoration: none;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px var(--shadow-light);
+}
+
+.nav-button:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px var(--shadow-medium);
+}
+
+.nav-button h3 {
+    color: var(--white);
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.nav-button p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--medium-gray);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.required {
+    color: var(--error-color);
+}
+
+button[type="submit"],
+.submit-btn {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover,
+.submit-btn:hover {
+    background-color: var(--accent-color);
+}
+
+.error-message {
+    color: var(--error-color);
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+/* Event Card Styles */
+.event-card {
+    background-color: var(--light-gray);
+    border-left: 4px solid var(--secondary-color);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+}
+
+.event-card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.event-date {
+    color: var(--dark-gray);
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Information Styles */
+.contact-info {
+    background-color: var(--light-green-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.contact-info h3 {
+    margin-top: 0;
+}
+
+.contact-info a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Info Section Styles */
+.info-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+}
+
+.info-section ul {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.info-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: var(--light-accent);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        width: 100%;
+    }
+    
+    nav ul li a {
+        text-align: center;
+    }
+    
+    .dropdown {
+        margin-left: 0;
+    }
+    
+    .dropdown-content {
+        position: static;
+        display: none;
+        width: 100%;
+        right: auto;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    main {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    .button-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    main h2 {
+        font-size: 1.5rem;
+    }
+}

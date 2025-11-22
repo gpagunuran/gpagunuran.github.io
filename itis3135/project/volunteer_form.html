@@ -3,29 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siembra NC || h2 in main</title>
-    <link rel="stylesheet" href="../styles/default.css">
-    <!--Accumulus Validator-->
+    <title>Siembra NC || Volunteer Sign-Up</title>
+    <link rel="stylesheet" href="../styles/project.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--header+main+footer-->
-  <header>
+    <header>
         <div data-include="../components/project_header.html"></div>
     </header>
-   <main>
-    <!--the page content-->
-    <h2>
-        Example Page
-    </h2>
-    <p>Used crtl+i to get this dummy text. Extra notes: in vscode, use header+main+body to get the three tags. example for adding multiple elements into another element: nav>a*5 will put a anchor tags into a nav element. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa erat at dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-    <p>Phasellus euismod, justo at facilisis cursus, enim erat dictum enim, nec dictum massa enim nec erat. Etiam ac nisi nec urna cursus dictum. Mauris euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa erat at dui.</p>
-    <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
-   </main>
-   <footer>
+    
+    <main>
+        <h2>Volunteer Sign-Up Form</h2>
+        
+        <p>Thank you for your interest in volunteering with Siembra NC! Please complete this form to let us know your availability and interests. We'll contact you soon to confirm your volunteer shifts and provide additional information.</p>
+        
+        <form id="volunteerForm">
+            <div class="form-group">
+                <label for="vFirstName">First Name <span class="required">*</span></label>
+                <input type="text" id="vFirstName" name="vFirstName" required>
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="vLastName">Last Name <span class="required">*</span></label>
+                <input type="text" id="vLastName" name="vLastName" required>
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="vEmail">Email Address <span class="required">*</span></label>
+                <input type="email" id="vEmail" name="vEmail" required>
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="vPhone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="vPhone" name="vPhone" placeholder="(555) 555-5555" required>
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="zipCode">Zip Code</label>
+                <input type="text" id="zipCode" name="zipCode" placeholder="28202" maxlength="5">
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="ageGroup">Age Group <span class="required">*</span></label>
+                <select id="ageGroup" name="ageGroup" required>
+                    <option value="">Select an option</option>
+                    <option value="under18">Under 18 (with parent/guardian)</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-49">35-49</option>
+                    <option value="50-64">50-64</option>
+                    <option value="65plus">65+</option>
+                </select>
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label>Areas of Interest (check all that apply)</label>
+                <div style="margin-top: 0.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+                        <input type="checkbox" name="interests" value="outreach"> Community Outreach
+                    </label>
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+                        <input type="checkbox" name="interests" value="events"> Event Support
+                    </label>
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+                        <input type="checkbox" name="interests" value="phonebank"> Phone Banking
+                    </label>
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+                        <input type="checkbox" name="interests" value="canvassing"> Canvassing
+                    </label>
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+                        <input type="checkbox" name="interests" value="admin"> Administrative Support
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Days Available (check all that apply) <span class="required">*</span></label>
+                <div style="margin-top: 0.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+                        <input type="checkbox" name="days" value="monday" required> Monday
+                    </label>
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+                        <input type="checkbox" name="days" value="tuesday"> Tuesday
+                    </label>
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+                        <input type="checkbox" name="days" value="wednesday"> Wednesday
+                    </label>
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+                        <input type="checkbox" name="days" value="thursday"> Thursday
+                    </label>
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+                        <input type="checkbox" name="days" value="friday"> Friday
+                    </label>
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+                        <input type="checkbox" name="days" value="saturday"> Saturday
+                    </label>
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+                        <input type="checkbox" name="days" value="sunday"> Sunday
+                    </label>
+                </div>
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label>Preferred Time of Day (check all that apply) <span class="required">*</span></label>
+                <div style="margin-top: 0.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+                        <input type="checkbox" name="timeOfDay" value="morning" required> Morning (8am-12pm)
+                    </label>
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+                        <input type="checkbox" name="timeOfDay" value="afternoon"> Afternoon (12pm-5pm)
+                    </label>
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+                        <input type="checkbox" name="timeOfDay" value="evening"> Evening (5pm-8pm)
+                    </label>
+                </div>
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="startDate">Earliest Date You Can Start</label>
+                <input type="date" id="startDate" name="startDate">
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="experience">Previous Volunteer Experience (optional)</label>
+                <textarea id="experience" name="experience" rows="3" placeholder="Tell us about any relevant volunteer or community organizing experience"></textarea>
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="vComments">Additional Comments or Questions</label>
+                <textarea id="vComments" name="vComments" rows="3"></textarea>
+                <span class="error-message"></span>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit Volunteer Registration</button>
+        </form>
+        
+        <section class="info-section">
+            <h3>What Happens Next?</h3>
+            <p>After submitting this form:</p>
+            <ul>
+                <li>Our volunteer coordinator will review your availability and interests</li>
+                <li>You'll receive a confirmation email within 2-3 business days</li>
+                <li>We'll schedule your orientation and first volunteer shift</li>
+                <li>You'll receive all necessary information, training materials, and resources</li>
+            </ul>
+            
+            <p>If you have immediate questions, please contact us at <a href="mailto:hola@siembranc.org">hola@siembranc.org</a>.</p>
+            
+            <p><strong>Important:</strong> Once confirmed for a volunteer shift, please arrive 10-15 minutes early for check-in and any last-minute instructions. If you need to cancel or reschedule, please give us at least 24 hours notice when possible.</p>
+        </section>
+    </main>
+    
+    <footer>
         <div data-include="../components/project_footer.html"></div>
     </footer>
-    <script src="../scripts/htmlinclude.min.js"></script>
     
+    <script src="../scripts/htmlinclude.min.js"></script>
+    <script src="../scripts/form_validation.js"></script>
 </body>
 </html>
