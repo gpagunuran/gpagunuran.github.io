@@ -50,7 +50,27 @@
             
             <div class="form-group">
                 <label for="meetingTime">Meeting Time <span class="required">*</span></label>
-                <input type="time" id="meetingTime" name="meetingTime" required>
+                <select id="meetingTime" name="meetingTime" required>
+                    <option value="">Select a time</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                    <option value="4:00 PM">4:00 PM</option>
+                    <option value="5:00 PM">5:00 PM</option>
+                    <option value="6:00 PM">6:00 PM</option>
+                    <option value="7:00 PM">7:00 PM</option>
+                </select>
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="meetingLocation">Meeting Location <span class="required">*</span></label>
+                <select id="meetingLocation" name="meetingLocation" required>
+                    <option value="">Select a location</option>
+                    <option value="Fairmont UMC">Fairmont UMC</option>
+                    <option value="Highland UMC">Highland UMC</option>
+                    <option value="Mayfield Memorial">Mayfield Memorial</option>
+                    <option value="First United">First United</option>
+                    <option value="First Baptist">First Baptist</option>
+                </select>
                 <span class="error-message"></span>
             </div>
             
@@ -77,7 +97,12 @@
             <button type="submit" class="submit-btn">Sign In to Meeting</button>
         </form>
         
-        <section class="info-section">
+        <section class="info-section" id="successMessage" style="display: none;">
+            <h3>Thank You for Signing In!</h3>
+            <p>Your meeting attendance has been recorded. We look forward to seeing you!</p>
+        </section>
+        
+        <section class="info-section" id="whatToExpect" style="display: none;">
             <h3>What to Expect</h3>
             <p>During our meeting, we'll cover important topics related to community organizing, civic engagement, and upcoming initiatives. Please arrive a few minutes early to get settled. Light refreshments may be provided.</p>
             
@@ -91,5 +116,6 @@
     
     <script src="../scripts/htmlinclude.min.js"></script>
     <script src="../scripts/form_validation.js"></script>
+    <script src="../scripts/meeting_form.js"></script>
 </body>
 </html>
