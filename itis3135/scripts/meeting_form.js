@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         successMessage.style.opacity = '1';
                     }, 50);
                     
-                    // Show "What to Expect" section after a short delay
+                    // Show more info after a delay
                     setTimeout(function() {
                         whatToExpect.style.display = 'block';
                         whatToExpect.style.opacity = '0';

@@ -1,12 +1,11 @@
 /* CSS Variables */
 :root {
-    --primary-color: #2d5016;
-    --secondary-color: #3a6b1f;
+    --primary-color: #08b2a4;
+    --secondary-color: #85a896;
     --accent-color: #4a7f29;
-    --light-accent: #a8d58a;
-    --bg-color: #f4f4f4;
-    --white: #ffffff;
-    --text-color: #333333;
+    --light-accent: #a9e1e5;
+    --bg-color: #e5f6fe;
+    --text-color: black;
     --light-gray: #f9f9f9;
     --medium-gray: #dddddd;
     --dark-gray: #666666;
@@ -34,10 +33,17 @@ body {
 /* Header Styles */
 header {
     background-color: var(--primary-color);
-    color: var(--white);
+    color: white;
     padding: 1rem 0;
     box-shadow: 0 2px 5px var(--shadow-light);
 }
+
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
 /* Navigation Styles */
 nav {
     background-color: var(--secondary-color);
@@ -57,7 +63,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: var(--white);
+    color: white;
     text-decoration: none;
     padding: 1rem 1.5rem;
     transition: background-color 0.3s ease;
@@ -70,6 +76,7 @@ nav ul li a:hover {
 /* Dropdown Menu */
 .dropdown {
     position: relative;
+    margin-left: auto;
 }
 
 .dropdown-content {
@@ -79,7 +86,7 @@ nav ul li a:hover {
     min-width: 200px;
     box-shadow: 0 8px 16px var(--shadow-dark);
     z-index: 1;
-    left: 0;
+    right: 0;
 }
 
 .dropdown-content a {
@@ -100,7 +107,7 @@ main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: var(--white);
+    background-color: white;
     box-shadow: 0 0 10px var(--shadow-light);
     border-radius: 5px;
 }
@@ -136,7 +143,7 @@ main p {
 .nav-button {
     display: block;
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: white;
     text-decoration: none;
     padding: 2rem;
     text-align: center;
@@ -152,7 +159,7 @@ main p {
 }
 
 .nav-button-title {
-    color: var(--white);
+    color: white;
     margin: 0;
     font-size: 1.3rem;
 }
@@ -202,6 +209,7 @@ input[type="date"]:focus,
 input[type="time"]:focus,
 select:focus,
 textarea:focus {
+    outline: none;
     border-color: var(--secondary-color);
 }
 
@@ -212,7 +220,8 @@ textarea:focus {
 button[type="submit"],
 .submit-btn {
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: white;
+    padding: 1rem 2rem;
     border: none;
     border-radius: 4px;
     font-size: 1.1rem;
@@ -306,30 +315,62 @@ img {
     margin: 2rem 0;
 }
 
-/* Footer Styles */
 footer {
-    background-color: var(--primary-color);
-    color: var(--white);
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 3rem;
-}
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
 
-footer p {
-    margin-bottom: 0.5rem;
-}
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 0 2rem;
+        }
 
-footer a {
-    color: var(--light-accent);
-    text-decoration: none;
-}
+        .footer-left {
+            flex: 1;
+            min-width: 300px;
+            margin-bottom: 1.5rem;
+        }
 
-footer a:hover {
-    text-decoration: underline;
-}
+        .footer-right {
+            flex: 0 0 auto;
+            text-align: right;
+        }
 
+        .footer-logo {
+            max-width: 120px;
+            height: auto;
+        }
 
-/* Responsive Styles */
+        .footer-copyright {
+            text-align: center;
+            width: 100%;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+/* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -344,9 +385,15 @@ footer a:hover {
         text-align: center;
     }
     
+    .dropdown {
+        margin-left: 0;
+    }
+    
     .dropdown-content {
+        position: static;
         display: none;
         width: 100%;
+        right: auto;
     }
     
     .dropdown:hover .dropdown-content {
@@ -363,7 +410,6 @@ footer a:hover {
     }
 }
 
-/* CSS Warning?
 @media (max-width: 480px) {
     header h1 {
         font-size: 1.5rem;
@@ -372,4 +418,4 @@ footer a:hover {
     main h2 {
         font-size: 1.5rem;
     }
-} */
+}
