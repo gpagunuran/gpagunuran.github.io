@@ -39,9 +39,9 @@
                 
                 <li><strong>Page Structure - Header:</strong>
                     <ul>
-                        <li>H1 with first 3 items from title: <!-- TODO: Check the header placeholder content (loaded via JavaScript into #header-placeholder) to see if H1 contains site name/branding matching title format --></li>
+                        <li>H1 with first 3 items from title: ✓ Yes </li>
                         <li>Consistent navigation bar on all pages: ✓ Yes - Uses JavaScript to dynamically load header content into <code>&lt;div id="header-placeholder"&gt;&lt;/div&gt;</code> which ensures consistency across all pages</li>
-                        <li>Navigation links to all pages: <!-- TODO: View the live site to see the header navigation and verify it includes links to all pages in the site --></li>
+                        <li>Navigation links to all pages: ⚠️ No Navbar or links to other pages found</li>
                         <li>Navigation position consistent: ✓ Yes - The header placeholder div is positioned at the top of the body on all pages, and JavaScript loads the same header content</li>
                     </ul>
                 </li>
@@ -50,10 +50,9 @@
                     <ul>
                         <li>H2 with name of page: ✓ Yes - Home page has <code>&lt;h2&gt;Welcome to Cylows Duo Application & Portfolio&lt;/h2&gt;</code> which serves as the page heading</li>
                         <li>Unique content for each page: ✓ Yes - Home page has unique welcome content about Cylows gaming services, a banner image, and a theme toggle feature specific to the homepage</li>
-                        <li>Home Page uses ids and classes appropriately: ✓ Yes - Main element has <code>id="main-home"</code> for page-specific styling, uses <code>class="container"</code> for layout, image has <code>class="main-image"</code>, and includes <code>id="theme-toggle"</code> button</li>
+                        <li>Home Page uses ids and classes appropriately: ✓ Yes - Main element has <code>id="main-home"</code> for page-specific styling, uses <code>class="container"</code> for layout, image has <code>aclass="main-image"</code>, and includes <code>id="theme-toggle"</code> button</li>
                         <li>Home page has actual content: ✓ Yes - Contains actual descriptive text about Cylows Destiny 2 gaming/coaching services, includes a branded banner image, and has interactive functionality (theme toggle button)</li>
-                        <li>4+ other pages exist with navigation: <!-- TODO: Visit the live site and check the navigation to count total pages (need at least 5 pages total including index.html). Click through to verify they all have the header/footer --></li>
-                        <li>Types of pages: Professional gaming portfolio/service site for Destiny 2 coaching. <!-- TODO: Visit other pages to identify specific types - about page, statistics page, collaboration/contact pages, etc. --></li>
+                        <li>4+ other pages exist with navigation:⚠️ No other pages exist other than index.html within the projects folder</li>
                     </ul>
                 </li>
                 
@@ -64,11 +63,11 @@
                     </ul>
                 </li>
                 
-                <li><strong>Overall Design and Usability:</strong>
+                <li><strong>Overall Design and Usability (based on styles/default.css):</strong>
                     <ul>
-                        <li>Color scheme and visual appeal: ✓ Excellent - Uses a sophisticated gradient-based color scheme with cool blues and grays (#34495e, #5dade2, #f4f6f7, #d6eaf8). The design features modern rounded corners, subtle shadows, and smooth transitions. Professional appearance appropriate for a gaming portfolio</li>
+                        <li>Color scheme and visual appeal: ✓ Excellent - Uses a sophisticated gradient-based color scheme with cool blues and grays (#34495e, #5dade2, #f4f6f7, #d6eaf8). The design features modern rounded corners, subtle shadows, and smooth transitions. Professional appearance apddpropriate for a gaming portfolio</li>
                         <li>Navigation ease and intuitiveness: ✓ Yes - The navigation structure is clear and professional, loaded dynamically for consistency. Menu items are clearly labeled for easy access to different sections</li>
-                        <li>Broken links or missing images: ⚠️ Some issues - While the banner image path is correct (images/cylows_banner.jpg), there are some broken links throughout the site that should be fixed. Navigation and validator links work correctly</li>
+                        <li>Broken links or missing images: sa Some issues - While the banner image path is correct (images/cylows_banner.jpg), there are some broken links throughout the site that should be fixed. Navigation and validator links work correctly</li>
                         <li>Mobile responsiveness: ✓ Excellent - The CSS includes comprehensive media queries with three breakpoints that adjust colors, sizing, padding, border-radius, and font sizes for optimal viewing on laptops, tablets, and mobile devices. Uses box-sizing: border-box throughout for proper responsive layout</li>
                         <li>Interactive features: ✓ Includes a theme toggle button for dark mode switching, showing attention to user experience and accessibility preferences</li>
                     </ul>
@@ -84,12 +83,10 @@
                 
                 <li><strong>Technical Implementation:</strong>
                     <ul>
-                        <li>HTML validation: The page includes direct links to W3C HTML validator showing proactive validation approach: <code>https://validator.w3.org/nu/?doc=https://limegreenfruit500.github.io/itis3135/project/index.html</code> <!-- TODO: Click this link on the live site to see current validation status --></li>
-                        <li>CSS validation: The page includes direct links to W3C CSS validator: <code>https://jigsaw.w3.org/css-validator/validator?uri=https://limegreenfruit500.github.io/itis3135/project/style.css</code> <!-- TODO: Click this link on the live site to see current validation status --></li>
-                        <li>Console errors: ✓ No JavaScript errors - The main.js script loads and executes properly without console errors, and the theme toggle functionality works as expected</li>
+                        <li>HTML validation: ✓ No apparent HTML errors based on W3C HTML validator: <code>https://validator.w3.org/nu/?doc=https://limegreenfruit500.github.io/itis3135/project/index.html</code></li>
+                        <li>CSS validation: ✓ No CSS errors based on W3C CSS validator: <code>https://jigsaw.w3.org/css-validator/validator?uri=https://limegreenfruit500.github.io/itis3135/project/style.css</code></li>
+                        <li>Console errors: ✓ No JavaScript errors</li>
                         <li>Accessibility: ✓ Includes WCAG/WAVE validator badge showing attention to accessibility standards</li>
-                        <li>Good practices observed: Uses HTML5 doctype, proper meta charset (utf-8), viewport meta tag for responsiveness, semantic HTML elements, deferred script loading, modular architecture with JavaScript component loading, comprehensive responsive design with box-sizing fixes throughout, and includes multiple validation badges demonstrating quality assurance</li>
-                        <li>Advanced CSS techniques: Implements modern gradient backgrounds, sophisticated responsive breakpoints with detailed adjustments, smooth transitions, and careful attention to box-sizing to prevent layout issues</li>
                     </ul>
                 </li>
                 
