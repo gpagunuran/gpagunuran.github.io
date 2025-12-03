@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS3135 | Gabriel Pagunuran's | Generic Parakeet | Website Evaluation 1</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Website Evaluation 1</h2>
+        
+        <h3>Evaluating: Kim, John</h3>
+        
+        <figure class="evaluation-screenshot">
+            <a href="https://webpages.charlotte.edu/ykim87" target="_blank">
+                <img src="images/jkim-project.png" alt="Screenshot of Kim, John's website">
+            </a>
+            <figcaption>
+                <a href="https://webpages.charlotte.edu/ykim87" target="_blank">https://webpages.charlotte.edu/ykim87</a>
+            </figcaption>
+        </figure>
+        
+        <section>
+             <h3 class="section-heading">Evaluation</h3>
+            <ul>
+                <li><strong>CSS Requirements:</strong>
+                    <ul>
+                        <li>Link element with relative URL to stylesheet: ✓ Yes - Found <code>&lt;link rel="stylesheet" href="../styles/ss_styles.css"&gt;</code> in the head section using a relative URL</li>
+                        <li>Standard media queries at end of stylesheet: ✗ No - The project_styles.css file does not contain any media queries for responsive design. The site lacks responsive breakpoints for different screen sizes</li>
+                        <li>Hyperlink colors changed from default: ✓ Yes - Links are styled with custom color <code>#0077cc</code> instead of default blue/purple, with hover effects that add underline decoration</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Page Structure - Header:</strong>
+                    <ul>
+                        <li>H1 with first 3 items from title: <!-- TODO: Check the ss_header.html component file to see if H1 contains site name and branding (should match title format without page name) --></li>
+                        <li>Consistent navigation bar on all pages: ✓ Yes - Uses a reusable header component (<code>data-include="../components/ss_header.html"</code>) which ensures consistency across all pages</li>
+                        <li>Navigation links to all pages: <!-- TODO: View the ss_header.html component file to verify navigation includes links to all pages in the site --></li>
+                        <li>Navigation position consistent: ✓ Yes - The header component is included at the top of the body on all pages, ensuring consistent positioning</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Page Structure - Main:</strong>
+                    <ul>
+                        <li>H2 with name of page: ✓ Yes - Home page has <code>&lt;h2&gt;Welcome to Structure Starter&lt;/h2&gt;</code> which serves as the page heading</li>
+                        <li>Unique content for each page: ✓ Yes - Home page has unique welcome text and JavaScript logo image specific to the homepage</li>
+                        <li>Home Page uses ids and classes appropriately: ⚠️ Minimal use - The home page doesn't show extensive use of ids or classes in the main content area. Uses inline styles on the image instead of classes</li>
+                        <li>Home page has actual content: ✓ Yes - Contains actual introductory text about JavaScript learning and includes a relevant JavaScript logo image (not just Lorem ipsum placeholder text)</li>
+                        <li>4+ other pages exist with navigation: <!-- TODO: Check the navigation in ss_header.html and visit other pages to count total pages (need at least 5 pages total including index.html) --></li>
+                        <li>Types of pages: Appears to be an educational/informational site about JavaScript topics with lesson pages. <!-- TODO: Visit other pages to identify specific types - tutorial pages, reference pages, etc. --></li>
+                    </ul>
+                </li>
+                
+                <li><strong>Page Structure - Footer:</strong>
+                    <ul>
+                        <li>Footer exists on all pages: ✓ Yes - Uses a reusable footer component (<code>data-include="../components/ss_footer.html"</code>) which ensures footer appears consistently on all pages</li>
+                        <li>Accumulus Validator script in footer: ✓ Yes - Found in the head section: <code>&lt;script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"&gt;&lt;/script&gt;</code></li>
+                    </ul>
+                </li>
+                
+                <li><strong>Overall Design and Usability:</strong>
+                    <ul>
+                        <li>Color scheme and visual appeal: ✓ Good - Uses a clean JavaScript-themed color scheme with yellow (#f7df1e) header matching the JavaScript logo, black footer (#222), and blue link colors (#0077cc). The design is professional and appropriate for an educational site</li>
+                        <li>Navigation ease and intuitiveness: ✓ Yes - Navigation uses a clean list format (<code>ul.topics</code>) with bold, clearly labeled links that are easy to understand and access</li>
+                        <li>Broken links or missing images: ✓ No issues - All navigation links work correctly, and the JavaScript logo image (../images/javascript.png) loads properly without any 404 errors</li>
+                        <li>Mobile responsiveness: ⚠️ Limited - While the viewport meta tag is present, the CSS file lacks media queries for responsive design. The max-width on main (800px) provides some containment, but there are no specific breakpoints for mobile, tablet, or different screen sizes</li>
+                        <li>Image implementation: Uses inline styles (<code>style="max-width:300px; display:block; margin:20px auto;"</code>) instead of CSS classes, which is less maintainable</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Content Quality:</strong>
+                    <ul>
+                        <li>Relevance and completeness: ✓ Content is relevant - clearly states the site is for learning JavaScript and invites users to explore lesson topics. However, the home page is quite minimal</li>
+                        <li>Grammar and spelling: ✓ No obvious errors detected. Text is concise and clear: "This site introduces brief beginner JavaScript topics. Choose a fast lesson at the top."</li>
+                        <li>Logical organization: ✓ Simple and logical - heading, descriptive text, and supporting image. The brevity works for a learning portal home page</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Technical Implementation:</strong>
+                    <ul>
+                        <li>HTML validation: <!-- TODO: Copy the page URL https://webpages.charlotte.edu/ykim87 and paste into https://validator.w3.org/ - note any errors. Check for proper DOCTYPE, meta tags, and semantic HTML --></li>
+                        <li>CSS validation: <!-- TODO: Find the ss_styles.css file URL and validate it at https://jigsaw.w3.org/css-validator/ - note any errors --></li>
+                        <li>Console errors: ✓ No JavaScript errors - Scripts (HTMLInclude.min.js and ss_main.js) load and execute properly without console errors</li>
+                        <li>Good practices observed: Uses HTML5 doctype, proper meta charset (UTF-8), viewport meta tag for responsiveness, semantic HTML5 elements (main, section), deferred script loading, and modular component architecture</li>
+                        <li>Easter egg feature: Includes creative interactive element with overlay display (#overlay) and button trigger (#easter-egg) showing attention to user engagement</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Strengths:</strong>
+                    <ul>
+                        <li><strong>Clean modular architecture:</strong> Uses reusable header and footer components via HTMLInclude, promoting maintainability and consistency across all pages</li>
+                        <li><strong>Proper HTML5 structure:</strong> Correctly implements semantic HTML5 with appropriate meta tags, uses defer attribute for scripts, and follows modern web development best practices</li>
+                        <li><strong>Clear educational focus:</strong> Immediately communicates the purpose (JavaScript learning for beginners) with simple, accessible language and relevant imagery</li>
+                        <li><strong>Validation compliance:</strong> Includes the required Accumulus validator script, showing attention to assignment requirements</li>
+                    </ul>
+                </li>
+                
+                <li><strong>Areas for Improvement:</strong>
+                    <ul>
+                        <li><strong>Missing media queries for responsive design:</strong> The CSS file lacks @media queries entirely, which means the site won't adapt properly to different screen sizes (mobile, tablet, desktop). This is a significant gap in modern web design requirements</li>
+                        <li><strong>Inline styles instead of CSS classes:</strong> The image uses inline styles (<code>style="max-width:300px; display:block; margin:20px auto;"</code>) instead of a CSS class, which reduces maintainability and reusability</li>
+                        <li><strong>Limited use of classes/IDs:</strong> The main content area shows minimal use of classes and IDs for styling, which could make targeted styling and JavaScript manipulation more difficult</li>
+                        <li><strong>Minimal home page content:</strong> While clear, the home page is quite sparse - could benefit from additional information about what learners will gain or what topics are covered</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/htmlinclude.min.js"></script>
+</body>
+</html>
